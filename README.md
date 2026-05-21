@@ -1,4 +1,4 @@
-# aws-secure-static-site
+# AWS-secure-static-site
 
 🚧 In Progress
 
