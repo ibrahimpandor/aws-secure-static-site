@@ -1,4 +1,4 @@
-# aws-secure-static-site
+# AWS-secure-static-site
 
 A secure static website hosted on AWS, deployed entirely through Terraform.
 No console clicks — every resource defined as code.
@@ -6,7 +6,6 @@ No console clicks — every resource defined as code.
 🌐 **Live site:** https://d36vtc5t02nquj.cloudfront.net
 
 ---
-
 ## What I Built
 
 As a Economics student working towards my cloud certifications i wanted to get the grasp of using tools with hands on experience so, this is my first real AWS project. I wanted to go beyond tutorials and build something properly — secured from the ground up and deployed through Infrastructure as Code.
@@ -14,7 +13,29 @@ As a Economics student working towards my cloud certifications i wanted to get t
 Every resource in this project was created by Terraform. no buttons in the AWS console was clicked to build the infrastructure.
 
 ---
+## The Problem & How This Project Solves It
 
+### The Problem
+Most developers host websites on platforms like Wix, WordPress, or Netlify where someone else manages the infrastructure. These platforms hide everything — security, scaling, cost, and architecture decisions are all made for you. You have no control and no understanding of what's happening underneath.
+
+In the real world, companies don't use Wix. They host applications on cloud infrastructure that engineers design, build, and secure themselves. The #1 cause of cloud data breaches is misconfiguration — developers spinning up cloud resources without understanding security. In 2019, a single misconfigured S3 bucket exposed 106 million Capital One customer records.
+
+### How This Project Solves It
+This project demonstrates how to host a website on AWS the right way — with security built in from the ground up, not added as an afterthought.
+
+Instead of making an S3 bucket public (the most common and dangerous mistake), this project:
+- Keeps the S3 bucket completely private — direct access returns Access Denied
+- Puts CloudFront in front of S3 as a secure proxy with Origin Access Control
+- Forces all traffic through HTTPS — no unencrypted connections possible
+- Applies least privilege IAM — only this specific CloudFront can read from S3
+- Encrypts all data at rest with AES256
+- Logs every access for a full audit trail
+
+And critically — every single resource is deployed through Terraform. No console clicks. No manual configuration that can't be reproduced. Infrastructure as Code means the entire setup can be destroyed and rebuilt identically in minutes.
+
+This is how real cloud engineers build. Not click by click — but securely, automatically, and repeatably through code.
+
+---
 ## Architecture
 
 **Traffic flow:**
