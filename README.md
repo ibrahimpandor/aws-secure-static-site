@@ -21,7 +21,16 @@ Every resource in this project was created by Terraform. no buttons in the AWS c
 
 User → CloudFront (HTTPS) → S3 (private) → Website served
 **Traffic flow:**
----
+## Screenshots
+
+### block Public accsess 
+![Screenshot 1](./architecture/Image%2025-05-2026%20at%2017.26.jpeg)
+
+### CloudFront & S3 Configuration
+![Screenshot 2](./architecture/Image%2025-05-2026%20at%2017.27.jpeg)
+
+### CloudFront & S3 Configuration
+
 
 ## AWS Services Used
 
