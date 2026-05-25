@@ -23,7 +23,7 @@ User → CloudFront (HTTPS) → S3 (private) → Website served
 **Traffic flow:**
 ## Screenshots
 
-### block Public accsess 
+### Block Public accsess 
 ![Screenshot 1](./architecture/Image%2025-05-2026%20at%2017.26.jpeg)
 
 ### CloudFront & S3 Configuration
