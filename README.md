@@ -47,9 +47,11 @@ User → CloudFront (HTTPS) → S3 (private) → Website served
 ### Block Public accsess 
 ![Screenshot 1](./architecture/Image%2025-05-2026%20at%2017.26.jpeg)
 
-### Live Website & Security Verification
-![Screenshot 2](./architecture/Image%2025-05-2026%20at%2017.27.jpeg)
+### Access Denied — Direct S3 URL Blocked
+![Access Denied](./architecture/Image%2025-05-2026%20at%2017.27.jpeg)
 
+### CloudFront Distribution — Live and Enabled
+![CloudFront](./architecture/Image%2025-05-2026%20at%2019.16.jpeg)
 ### CloudFront & S3 Configuration
 
 
