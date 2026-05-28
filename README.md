@@ -8,7 +8,7 @@ No console clicks — every resource defined as code.
 ---
 ## What I Built
 
-As a Economics student working towards my cloud certifications i wanted to get the grasp of using tools with hands on experience so, this is my first real AWS project. I wanted to go beyond tutorials and build something properly — secured from the ground up and deployed through Infrastructure as Code.
+As a Economics student working towards my cloud certifications i wanted to get the grasp of using tools with hands on experience so, this is my first real AWS project. I wanted to go beyond tutorials and build something properly — secured from the ground up and deployed through Infrastructure as Code. my key goal for this project was to understand the basics of AWS and terrafrom.
 
 Every resource in this project was created by Terraform. no buttons in the AWS console was clicked to build the infrastructure.
 
@@ -18,7 +18,7 @@ Every resource in this project was created by Terraform. no buttons in the AWS c
 ### The Problem
 Most developers host websites on platforms like Wix, WordPress, or Netlify where someone else manages the infrastructure. These platforms hide everything — security, scaling, cost, and architecture decisions are all made for you. You have no control and no understanding of what's happening underneath.
 
-In the real world, companies don't use Wix. They host applications on cloud infrastructure that engineers design, build, and secure themselves. The #1 cause of cloud data breaches is misconfiguration — developers spinning up cloud resources without understanding security. In 2019, a single misconfigured S3 bucket exposed 106 million Capital One customer records.
+In the real world, companies don't use Wix. They host applications on cloud infrastructure that engineers design, build, and secure themselves. The main cause of cloud data breaches is misconfiguration — developers spinning up cloud resources without understanding security. a great contemparary example was In 2019, a single misconfigured S3 bucket exposed 106 million Capital One customer records.
 
 ### How This Project Solves It
 This project demonstrates how to host a website on AWS the right way — with security built in from the ground up, not added as an afterthought.
